@@ -57,6 +57,7 @@ void read_esp()
 
 void init()
 {
+
     esp.baud(BAUD);                                 // 通信速度の指定
     esp.attach(&read_esp, UnbufferedSerial::RxIrq); // 割り込み関数の割当
 }
